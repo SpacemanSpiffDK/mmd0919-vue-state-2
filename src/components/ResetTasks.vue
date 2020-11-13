@@ -22,9 +22,9 @@
   button {
     padding: .5vw 2vw;
     font-size: 1rem;
-    color: #fff;
+    color: #000;
     font-weight: bold;
-    background-color: #05c46b;
+    background-color: #d2dae2;
     border: none;
     box-shadow: .1vw .1vw .3vw 0 #999;
     cursor: pointer;

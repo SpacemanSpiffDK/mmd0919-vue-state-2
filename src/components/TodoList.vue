@@ -4,7 +4,7 @@
     <table>
       <tr v-for="(item, index) in this.$store.getters.restTodos" :key="index">
         <td>{{ item.name }}</td>
-        <td><button @click="item.done = true">Not done</button></td>
+        <td><button @click="item.done = true">Done</button></td>
       </tr>
     </table>
   </div>  
@@ -38,7 +38,7 @@ export default {
     font-size: 1rem;
     color: #fff;
     font-weight: bold;
-    background-color: #ff3f34;
+    background-color: #05c46b;
     border: none;
     box-shadow: .1vw .1vw .3vw 0 #999;
     cursor: pointer;

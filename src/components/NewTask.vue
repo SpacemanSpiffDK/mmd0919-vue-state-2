@@ -1,6 +1,6 @@
 <template>
   <div id="newTask">
-    <input type="text" placeholder="new task" v-model="newTaskText" />
+    <input type="text" id="textInput" placeholder="new task" v-model="newTaskText" />
     <button @click="newItem">Send</button>
   </div>  
 </template>
