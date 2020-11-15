@@ -9,7 +9,7 @@ export default {
   name: 'RemoveAll',
   methods: {
     removeAll: function () {
-      let userConfirm = confirm('are you sure?');
+      let userConfirm = confirm('are you sure?'); // create a dialogue box, store result in userConfirm Boolean
       if (userConfirm) {
         this.$store.commit("removeAll"); // call on the "removeAll" mutation in store.js
       }

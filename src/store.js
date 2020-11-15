@@ -19,11 +19,11 @@ export default new Vuex.Store({
         done: false
       },
       {
-        name: 'Pay bills',
+        name: 'Feed cat again',
         done: false
       },
       {
-        name: 'Feed cat again',
+        name: 'Pay bills',
         done: false
       },
       {
