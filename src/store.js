@@ -39,6 +39,9 @@ export default new Vuex.Store({
       state.items.forEach(item => {
         item.done = false;
       });
+    },
+    removeAll: state => {
+      state.items = [];
     }
   },
   actions: {

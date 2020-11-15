@@ -3,7 +3,7 @@
     <TodoList />
     <TodoDone />
     <NewTask />
-    <ResetTasks />
+    <RemoveAll />
   </div>
 </template>
 
@@ -11,7 +11,7 @@
 import TodoList from './components/TodoList.vue'
 import TodoDone from './components/TodoDone.vue'
 import NewTask from './components/NewTask.vue'
-import ResetTasks from './components/ResetTasks.vue'
+import RemoveAll from './components/RemoveAll.vue'
 
 export default {
   name: 'App',
@@ -19,7 +19,7 @@ export default {
     TodoList,
     TodoDone,
     NewTask,
-    ResetTasks
+    RemoveAll
   }
 }
 </script>
@@ -36,11 +36,5 @@ export default {
     margin : 1vw auto;
     background-color: #4bcffa;
     padding: 1vw;
-  }
-  h1 {
-    margin: 0 0 1vw 0;
-  }
-  h2 {
-    margin: 1vw 0;
   }
 </style>

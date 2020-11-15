@@ -1,15 +1,18 @@
 <template>
-  <div id="resetTasks">
-    <button @click="resetItems">reset</button>
+  <div id="removeTasks">
+    <button @click="removeAll">Remove all</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ResetAll',
+  name: 'RemoveAll',
   methods: {
-    resetItems: function () {
-      this.$store.commit("resetToNotDone"); // call on the "resetToNotDone" mutation in store.js
+    removeAll: function () {
+      let userConfirm = confirm('are you sure?');
+      if (userConfirm) {
+        this.$store.commit("removeAll"); // call on the "removeAll" mutation in store.js
+      }
     },
   },
 };
