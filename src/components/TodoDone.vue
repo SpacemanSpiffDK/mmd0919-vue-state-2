@@ -13,6 +13,7 @@
         <tr v-for="(item, index) in this.$store.getters.doneTodos" :key="index">
           <td>{{ item.name }}</td>
           <td><button @click="item.done = false">Add to list</button></td>
+          <td><button @click="deleteItem(index)">Delete</button></td>
         </tr>
       </table>
       <ResetTasks />
@@ -33,6 +34,11 @@ export default {
       showDone: false, // Boolean that vue will keep an eye on for changes
     };
   },
+  methods: {
+    deleteItem: function (index){
+      this.$store.state.items.splice(index, 1);
+    }
+  }
 };
 </script>
 
