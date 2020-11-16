@@ -7,17 +7,12 @@ Vue.config.productionTip = false
 
 new Vue({
   store,
-  data () {
-    return {
-      items: []
-    }
-  },
-  methods: {
+  // methods: {
     
-  },
-  computed: {
+  // },
+  // computed: {
     
-  },
+  // },
   // mounted: function () {
   //  console.log('mounted');
   // },

@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'ResetAll',
+  name: 'ResetTasks',
   methods: {
     resetItems: function () {
       this.$store.commit("resetToNotDone"); // call on the "resetToNotDone" mutation in store.js
